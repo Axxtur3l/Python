@@ -12,16 +12,34 @@ class Person:
     def hi(self):
         print('Hi, my name is ' + self.name)
 
-Alyssa = Person('Alyssa',18)
+class Student(Person):
+    role = 'student'
+
+Alyssa = Student('Alyssa',18)
 print(Alyssa.species)
 print(Alyssa.name)
 print(Alyssa.age)
+print(Alyssa.role)
 Alyssa.hello()
 
 Alyssa.hi()
 
-Ayo = Person('Ayo', 16)
+Ayo = Student('Ayo', 16)
 print(Ayo.species)
 print(Ayo.name)
 print(Ayo.age)
+print(Ayo.role)
 Ayo.hello()
+
+class Teacher(Person):
+    role = 'teacher'
+
+    def hi(self):
+        print('Hi, my name is Mx. ' + self.name)
+
+forlenza = Teacher('Forlenza', 184)
+print(forlenza.role)
+
+forlenza.hi()
+
+
